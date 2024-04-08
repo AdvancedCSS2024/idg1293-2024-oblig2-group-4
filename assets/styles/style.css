@@ -35,7 +35,7 @@ body {
 .content__header h1 {
   font-family: OpenSans-ExtraBold, sans-serif;
   color: #005ba7;
-  font-size: 400%;
+  font-size: 200%;
   font-weight: bolder;
 }
 .content__header h1 span {
@@ -43,11 +43,53 @@ body {
 }
 .content__header h2 {
   font-family: "marydale", sans-serif;
-  font-weight: 150%;
+  font-weight: 100%;
   font-style: normal;
-  font-size: 200%;
+  font-size: 100%;
 }
 
 p {
   font-family: "open";
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+.section1__moon {
+  width: 10em;
+}
+.section1__moon .cls-1 {
+  fill: #eaeae9;
+  stroke-width: 4.21px;
+}
+.section1__moon .cls-1,
+.section1__moon .cls-2,
+.section1__moon .cls-3 {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+}
+.section1__moon .cls-4 {
+  fill: #231f20;
+}
+.section1__moon .cls-4,
+.section1__moon .cls-5 {
+  stroke-width: 0px;
+}
+.section1__moon .cls-2 {
+  fill: #fff;
+}
+.section1__moon .cls-2,
+.section1__moon .cls-3 {
+  stroke-width: 4.6px;
+}
+.section1__moon .cls-3 {
+  fill: #b4b6b7;
+}
+.section1__moon .cls-5 {
+  fill: #fff;
+}
+
+p {
+  max-width: 20%;
 }/*# sourceMappingURL=style.css.map */
