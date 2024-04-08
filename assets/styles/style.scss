@@ -1,9 +1,5 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 @font-face {
   font-family: "OpenSans-Regular";
@@ -14,14 +10,11 @@
   src: url(assets/fonts/OpenSans-ExtraBold.ttf) format("truetype");
 }
 
-/*
-.body {
-    &__background--image {
-        background-image: url(../images/web_poster2-02.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 main {
   background-image: url(../images/web_poster2-02.png);
@@ -29,17 +22,6 @@ main {
   background-repeat: no-repeat;
 }
 
-// .background {
-
-//     &__wave1 {
-//         position: absolute;
-//         background-color: #005ba7;
-//         width: 100vw;
-//         height: 15%;
-//         margin-top: 20%;
-//         border-top-left-radius: 50%;
-//     }
-// }
 .content {
   padding: 7%;
 
