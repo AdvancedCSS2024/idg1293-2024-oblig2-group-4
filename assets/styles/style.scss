@@ -14,6 +14,21 @@
     src: url(assets/fonts/OpenSans-ExtraBold.ttf) format("truetype");
 }
 
+/*
+.body {
+    &__background--image {
+        background-image: url(../images/web_poster2-02.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}*/
+
+body {
+    background-image: url(../images/web_poster2-02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 // .background {
     
 //     &__wave1 {
@@ -49,4 +64,8 @@
             font-size: 200%;
         }
     }
+}
+
+p {
+    font-family: "open";
 }
