@@ -12,6 +12,20 @@
   font-family: "OpenSans-ExtraBold";
   src: url(assets/fonts/OpenSans-ExtraBold.ttf) format("truetype");
 }
+/*
+.body {
+    &__background--image {
+        background-image: url(../images/web_poster2-02.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}*/
+body {
+  background-image: url(../images/web_poster2-02.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .content {
   padding: 7%;
 }
@@ -32,4 +46,8 @@
   font-weight: 150%;
   font-style: normal;
   font-size: 200%;
+}
+
+p {
+  font-family: "open";
 }/*# sourceMappingURL=style.css.map */
