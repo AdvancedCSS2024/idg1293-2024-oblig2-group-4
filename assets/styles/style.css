@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "OpenSans-Regular";
   src: url(assets/fonts/OpenSans.Regular.ttf) format("truetype");
@@ -12,14 +6,12 @@
   font-family: "OpenSans-ExtraBold";
   src: url(assets/fonts/OpenSans-ExtraBold.ttf) format("truetype");
 }
-/*
-.body {
-    &__background--image {
-        background-image: url(../images/web_poster2-02.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 main {
   background-image: url(../images/web_poster2-02.png);
   background-size: cover;
