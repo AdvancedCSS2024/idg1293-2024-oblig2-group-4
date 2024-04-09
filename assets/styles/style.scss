@@ -68,9 +68,17 @@ p {
     }
   }
 
+  &__svgs {
+    position: relative;
+  }
+
   &__moon {
-    width: 10em;
+    width: 18em;
     padding-right: 20%;
+    padding-top: 40%;
+//    position: absolute;
+//    top: 85%;
+//    right: 20px;
 
     //svg styles
     .cls-1 {
@@ -114,10 +122,10 @@ p {
 
   //big star
   &__bigstar {
-    width: 50px;
+    width: 60px;
     position: absolute;
-    right: 5%;
-    top: 90%;
+    right: 25%;
+    top: 10%;
     .colour {
       fill: #f5ec43;
       stroke: #231f20;
@@ -127,10 +135,10 @@ p {
   }
 
   &__smallstar {
-    width: 40px;
+    width: 50px;
     position: absolute;
     right: 10px;
-    top: 95%;
+    top: 35%;
     .colour-small {
       fill: #f5ec43;
       stroke: #231f20;
@@ -146,9 +154,24 @@ p {
     &--strong {
       font-size: 60px;
     }
+  }  
+  &__svg {
+  position: relative;
   }
-  &__car {
-    width: 100px;
+  &__curvedtext {    
+    width: 550px;
+//    position: absolute;
+    font-family: "marydale", sans-serif;
+    #curve {    
+      fill: none;
+      stroke: none;
+    }
+  }
+  &__car {    
+    width: 150px;
+    position: absolute;
+    left: 80%;
+    top: 15px;
     .outline {
       stroke: #231f20;
       stroke-miterlimit: 10;
@@ -173,7 +196,8 @@ p {
 
 p {
   max-width: 40%;
-  font-size: 40px;
+  font-size: 25px;
+  font-family: "marydale", sans-serif;
 }
 
 .section3 {
