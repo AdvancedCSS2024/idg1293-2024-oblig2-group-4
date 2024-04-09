@@ -48,8 +48,13 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.section1__text--moon {
+  color: pink;
+  margin-left: 5%;
+}
 .section1__moon {
   width: 10em;
+  padding-right: 20%;
 }
 .section1__moon .cls-1 {
   fill: #eaeae9;
@@ -81,7 +86,26 @@ p {
 .section1__moon .cls-5 {
   fill: #fff;
 }
+.section1__bigstar {
+  width: 50px;
+}
+.section1__bigstar .colour {
+  fill: #f5ec43;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.6px;
+}
+.section1__smallstar .colour-small {
+  fill: #f5ec43;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.6px;
+}
+
+.section2__text--strong {
+  font-size: 20px;
+}
 
 p {
-  max-width: 20%;
+  max-width: 30%;
 }/*# sourceMappingURL=style.css.map */
