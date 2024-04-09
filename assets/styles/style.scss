@@ -53,7 +53,8 @@ main {
 }
 
 p {
-  font-family: "open";
+  font-family: "OpenSans-Regular";
+  src: url(assets/fonts/OpenSans.Regular.ttf) format("truetype");
 }
 
 .section1 {
@@ -114,6 +115,9 @@ p {
   //big star
   &__bigstar {
     width: 50px;
+    position: absolute;
+    right: 5%;
+    top: 90%;
     .colour {
       fill: #f5ec43;
       stroke: #231f20;
@@ -123,25 +127,51 @@ p {
   }
 
   &__smallstar {
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 95%;
     .colour-small {
       fill: #f5ec43;
       stroke: #231f20;
       stroke-miterlimit: 10;
       stroke-width: 4.6px;
-    }
+    } //I would put the colouring under one class, but it wouldn't work
   }
 }
 
 .section2 {
+  display: flex;
   &__text {
     &--strong {
-      font-size: 20px;
+      font-size: 60px;
+    }
+  }
+  &__car {
+    width: 100px;
+    .outline {
+      stroke: #231f20;
+      stroke-miterlimit: 10;
+      stroke-width: 4.21px;
+    }
+
+    .outline, .class2 {
+      fill: #231f20;
+    }
+
+    .class2, .carcolour {
+      stroke-width: 0px;
+    }
+
+    .carcolour {
+      fill: #c77161;
     }
   }
 }
 
 p {
-  max-width: 30%;
+  max-width: 40%;
+  font-size: 40px;
 }
 
 .section3 {
