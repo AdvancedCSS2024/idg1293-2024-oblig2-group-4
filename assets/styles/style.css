@@ -45,7 +45,8 @@ main {
 }
 
 p {
-  font-family: "open";
+  font-family: "OpenSans-Regular";
+  src: url(assets/fonts/OpenSans.Regular.ttf) format("truetype");
 }
 
 .section1 {
@@ -92,12 +93,21 @@ p {
 }
 .section1__bigstar {
   width: 50px;
+  position: absolute;
+  right: 5%;
+  top: 90%;
 }
 .section1__bigstar .colour {
   fill: #f5ec43;
   stroke: #231f20;
   stroke-miterlimit: 10;
   stroke-width: 4.6px;
+}
+.section1__smallstar {
+  width: 40px;
+  position: absolute;
+  right: 10px;
+  top: 95%;
 }
 .section1__smallstar .colour-small {
   fill: #f5ec43;
@@ -106,197 +116,31 @@ p {
   stroke-width: 4.6px;
 }
 
+.section2 {
+  display: flex;
+}
 .section2__text--strong {
-  font-size: 20px;
+  font-size: 60px;
+}
+.section2__car {
+  width: 100px;
+}
+.section2__car .outline {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.21px;
+}
+.section2__car .outline, .section2__car .class2 {
+  fill: #231f20;
+}
+.section2__car .class2, .section2__car .carcolour {
+  stroke-width: 0px;
+}
+.section2__car .carcolour {
+  fill: #c77161;
 }
 
 p {
-  max-width: 30%;
-  max-width: 20%;
-}
-
-.section3 {
-  display: flex;
-  justify-content: space-evenly;
-}
-.section3__kid1 {
-  width: 15%;
-}
-.section3__kid1 .cls-1,
-.section3__kid1 .cls-2 {
-  stroke-width: 0px;
-}
-.section3__kid1 .cls-1,
-.section3__kid1 .cls-3 {
-  fill: #231f20;
-}
-.section3__kid1 .cls-4 {
-  fill: #f5ec43;
-}
-.section3__kid1 .cls-4,
-.section3__kid1 .cls-5,
-.section3__kid1 .cls-6,
-.section3__kid1 .cls-7,
-.section3__kid1 .cls-8,
-.section3__kid1 .cls-3 {
-  stroke-miterlimit: 10;
-}
-.section3__kid1 .cls-4,
-.section3__kid1 .cls-5,
-.section3__kid1 .cls-6,
-.section3__kid1 .cls-8,
-.section3__kid1 .cls-3 {
-  stroke: #231f20;
-}
-.section3__kid1 .cls-4,
-.section3__kid1 .cls-5,
-.section3__kid1 .cls-7,
-.section3__kid1 .cls-8,
-.section3__kid1 .cls-3 {
-  stroke-width: 4.6px;
-}
-.section3__kid1 .cls-5 {
-  fill: #b6a69e;
-}
-.section3__kid1 .cls-6 {
-  fill: #a1cf6d;
-  stroke-width: 4.6px;
-}
-.section3__kid1 .cls-7 {
-  fill: none;
-  stroke: #fff;
-}
-.section3__kid1 .cls-2 {
-  fill: #fff;
-}
-.section3__kid1 .cls-8 {
-  fill: #ad9282;
-}
-.section3__kid2 {
-  width: 15%;
-}
-.section3__kid2 .cls-1,
-.section3__kid2 .cls-2,
-.section3__kid2 .cls-3,
-.section3__kid2 .cls-4 {
-  stroke-width: 0px;
-}
-.section3__kid2 .cls-1,
-.section3__kid2 .cls-5 {
-  fill: #231f20;
-}
-.section3__kid2 .cls-6 {
-  fill: #fce0ce;
-}
-.section3__kid2 .cls-6,
-.section3__kid2 .cls-7,
-.section3__kid2 .cls-5 {
-  stroke-miterlimit: 10;
-  stroke-width: 4.6px;
-}
-.section3__kid2 .cls-6,
-.section3__kid2 .cls-5 {
-  stroke: #231f20;
-}
-.section3__kid2 .cls-2 {
-  fill: #00b1dc;
-}
-.section3__kid2 .cls-3 {
-  fill: #c77161;
-}
-.section3__kid2 .cls-7 {
-  fill: none;
-  stroke: #fff;
-}
-.section3__kid2 .cls-4 {
-  fill: #fff;
-}
-.section3__kid3 {
-  width: 15%;
-}
-.section3__kid3 .cls-1,
-.section3__kid3 .cls-2,
-.section3__kid3 .cls-3 {
-  stroke-width: 0px;
-}
-.section3__kid3 .cls-1,
-.section3__kid3 .cls-4 {
-  fill: #231f20;
-}
-.section3__kid3 .cls-2 {
-  fill: #0a0203;
-}
-.section3__kid3 .cls-5 {
-  fill: #f5ec43;
-}
-.section3__kid3 .cls-5,
-.section3__kid3 .cls-6,
-.section3__kid3 .cls-7,
-.section3__kid3 .cls-8,
-.section3__kid3 .cls-4 {
-  stroke-miterlimit: 10;
-}
-.section3__kid3 .cls-5,
-.section3__kid3 .cls-6,
-.section3__kid3 .cls-8,
-.section3__kid3 .cls-4 {
-  stroke: #231f20;
-}
-.section3__kid3 .cls-5,
-.section3__kid3 .cls-7,
-.section3__kid3 .cls-8,
-.section3__kid3 .cls-4 {
-  stroke-width: 4.6px;
-}
-.section3__kid3 .cls-6 {
-  fill: #a1cf6d;
-  stroke-width: 4.6px;
-}
-.section3__kid3 .cls-7 {
-  fill: none;
-  stroke: #fff;
-}
-.section3__kid3 .cls-8 {
-  fill: #816c5d;
-}
-.section3__kid3 .cls-3 {
-  fill: #fff;
-}
-
-.section4__earth .cls-1 {
-  fill: #00b1dc;
-}
-.section4__earth .cls-1,
-.section4__earth .cls-2,
-.section4__earth .cls-3,
-.section4__earth .cls-4,
-.section4__earth .cls-5 {
-  stroke: #231f20;
-  stroke-miterlimit: 10;
-}
-.section4__earth .cls-1,
-.section4__earth .cls-3 {
-  stroke-width: 4.6px;
-}
-.section4__earth .cls-2,
-.section4__earth .cls-6 {
-  fill: none;
-}
-.section4__earth .cls-6 {
-  stroke-width: 0px;
-}
-.section4__earth .cls-3 {
-  fill: #a1cf6d;
-}
-.section4__earth .cls-4 {
-  fill: #fff;
-}
-.section4__earth .cls-5 {
-  fill: #0a0203;
-}
-
-.footer {
-  height: 200px;
-  color: white;
-  background-color: #005ba7;
+  max-width: 40%;
+  font-size: 40px;
 }/*# sourceMappingURL=style.css.map */
