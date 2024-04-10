@@ -17,14 +17,7 @@
 main {
   background: url(../images/web_poster2-02.png) no-repeat;
   width: 100vw;
-  //height: 100vw;
-  //object-fit: contain;
-  //-webkit-background-size: cover;
-  //-moz-background-size: cover;
-  //-o-background-size: cover;
   background-size: cover;
-  // background-color: #00b1dc;
-  //  background-repeat: no-repeat;
 }
 
 p,
@@ -58,7 +51,6 @@ pre {
       font-style: normal;
       font-size: 3vw;
       line-height: 1.2em;
-      //    max-width: 100%;
     }
   }
 }
@@ -152,7 +144,7 @@ pre {
       stroke: #231f20;
       stroke-miterlimit: 10;
       stroke-width: 4.6px;
-    } //I would put the colouring under one class, but it wouldn't work
+    } 
   }
 }
 
@@ -187,23 +179,21 @@ pre {
   }
   &__curvedtext {
     width: 50vw;
-    //    position: absolute;
     font-family: "marydale", sans-serif;
     #curve {
       fill: none;
       stroke: none;
     }
   }
+
   &__car {
     width: 45vw;
     position: absolute;
     left: 42vw;
-    // top: 15px;
     bottom: 20vw;
     #carpath {
       fill: none;
       stroke: none;
-      //    width: 50vw;
     }
     .outline {
       stroke: #231f20;
@@ -233,8 +223,6 @@ pre {
   position: relative;
 
   &__co2 {
-    // display: flex;
-    // justify-content: space-evenly;
     z-index: 3;
 
     &__svg {
