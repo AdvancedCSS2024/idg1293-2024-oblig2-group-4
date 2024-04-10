@@ -28,7 +28,8 @@ main {
 //  background-repeat: no-repeat;
 }
 
-p {
+p,
+pre {
   font-family: "marydale", sans-serif;
 }
 
@@ -58,7 +59,7 @@ p {
       font-style: normal;
       font-size: 3vw;
       line-height: 1.2em;
-  //    max-width: 100%;
+      //    max-width: 100%;
     }
   }
 }
@@ -180,15 +181,15 @@ p {
     &--strong {
       font-size: 60px;
     }
-  }  
+  }
   &__svg {
-  position: relative;
+    position: relative;
   }
   &__curvedtext {    
     width: 50vw;
 //    position: absolute;
     font-family: "marydale", sans-serif;
-    #curve {    
+    #curve {
       fill: none;
       stroke: none;
     }
@@ -227,16 +228,17 @@ p {
 }
 
 .section3 {
+  padding: 0;
+  margin: 0;
   position: relative;
 
   &__co2 {
-    display: flex;
-    justify-content: space-evenly;
+    // display: flex;
+    // justify-content: space-evenly;
     z-index: 3;
-    transform: translate(0,100%);
 
     &__svg {
-      width: 5%;
+      width: 4vw;
 
       .cls-1 {
         fill: #231f20;
@@ -268,7 +270,7 @@ p {
     }
 
     &__eyebrows {
-      width: 10%;
+      width: 10vw;
 
       .cls-1 {
         fill: #231f20;
@@ -298,17 +300,50 @@ p {
         stroke-width: 4.6px;
       }
     }
+
+    .no1 {
+    }
+
+    .no2 {
+    }
+
+    .no3 {
+      width: 6vw;
+    }
+
+    .no4 {
+    }
+
+    .no5 {
+    }
+
+    .no6 {
+    }
+
+    .no7 {
+    }
+
+    .no8 {
+      width: 6vw;
+    }
+
+    .no9 {
+    }
+
+    .no10 {
+    }
+
+    .no11 {
+    }
   }
 
   &__kids {
-    display: flex;
-    justify-content: space-evenly;
-    transform: translate(0, 25%);
-    z-index: 2;
+    // display: flex;
+    // justify-content: space-evenly;
+    // z-index: 3;
 
     &__kid1 {
-      width: 25%;
-      transform: translate(0, 20%);
+      width: 25vw;
 
       .cls-1,
       .cls-2 {
@@ -373,7 +408,7 @@ p {
     }
 
     &__kid2 {
-      width: 20%;
+      width: 20vw;
 
       .cls-1,
       .cls-2,
@@ -422,7 +457,7 @@ p {
     }
 
     &__kid3 {
-      width: 25%;
+      width: 25vw;
 
       .cls-1,
       .cls-2,
@@ -486,10 +521,23 @@ p {
   }
 
   &__earth {
-    // position: absolute;
+    position: relative;
     z-index: 1;
 
+    &__text {
+      display: flex;
+      z-index: 3;
+
+      #text1 {
+        position: absolute;
+        top: 400%;
+        left: 50px;
+      }
+    }
+
     &__svg {
+
+      position: absolute;
       .cls-1 {
         fill: #00b1dc;
       }
@@ -533,7 +581,7 @@ p {
 }
 
 .footer {
-  height: 200px;
+  height: 20%;
   color: white;
   background-color: #005ba7;
 
@@ -541,7 +589,7 @@ p {
     background-color: white;
     color: black;
     height: 40%;
-    padding: 2%;
+    padding: 1%;
   }
 
   &__bottom {
