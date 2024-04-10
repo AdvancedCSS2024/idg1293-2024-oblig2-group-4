@@ -145,10 +145,6 @@ pre {
 .section2 {
   display: flex;
   padding-bottom: 15vw;
-  /*&__text {
-    &--strong {
-      font-size: 60px;
-    }*/
 }
 .section2__svg {
   position: relative;
@@ -166,8 +162,7 @@ pre {
   width: 45vw;
   position: absolute;
   left: 42vw;
-  bottom: 40vw;
-  bottom: 20vw;
+  bottom: 42vw;
 }
 .section2__car #carpath {
   fill: none;
