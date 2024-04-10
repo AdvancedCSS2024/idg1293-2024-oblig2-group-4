@@ -23,8 +23,8 @@ main {
   //-moz-background-size: cover;
   //-o-background-size: cover;
   background-size: cover;
- // background-color: #00b1dc;
-//  background-repeat: no-repeat;
+  // background-color: #00b1dc;
+  //  background-repeat: no-repeat;
 }
 
 p,
@@ -156,7 +156,8 @@ pre {
   }
 }
 
-@keyframes small-star { //code taken from https://flaviocopes.com/rotate-image/
+@keyframes small-star {
+  //code taken from https://flaviocopes.com/rotate-image/
   0% {
     transform: rotate(0deg);
   }
@@ -184,25 +185,25 @@ pre {
   &__svg {
     position: relative;
   }
-  &__curvedtext {    
+  &__curvedtext {
     width: 50vw;
-//    position: absolute;
+    //    position: absolute;
     font-family: "marydale", sans-serif;
     #curve {
       fill: none;
       stroke: none;
     }
   }
-  &__car {    
+  &__car {
     width: 45vw;
     position: absolute;
     left: 42vw;
-   // top: 15px;
-   bottom: 20vw; 
+    // top: 15px;
+    bottom: 20vw;
     #carpath {
       fill: none;
       stroke: none;
-  //    width: 50vw;
+      //    width: 50vw;
     }
     .outline {
       stroke: #231f20;
@@ -238,6 +239,7 @@ pre {
 
     &__svg {
       width: 4vw;
+      z-index: 7;
 
       .cls-1 {
         fill: #231f20;
@@ -270,6 +272,7 @@ pre {
 
     &__eyebrows {
       width: 10vw;
+      z-index: 7;
 
       .cls-1 {
         fill: #231f20;
@@ -300,49 +303,96 @@ pre {
       }
     }
 
-/*    .no1 {
+    .no1 {
+      position: absolute;
+      bottom: 55vw;
+      left: 10vw;
+      z-index: 7;
     }
 
     .no2 {
-    }*/
+      position: absolute;
+      bottom: 58vw;
+      left: 25vw;
+      z-index: 7;
+    }
 
     .no3 {
       width: 6vw;
+      position: absolute;
+      bottom: 65vw;
+      left: 28vw;
+      z-index: 7;
     }
-/*
+
     .no4 {
+      position: absolute;
+      bottom: 55vw;
+      left: 32vw;
+      z-index: 7;
     }
 
     .no5 {
+      position: absolute;
+      bottom: 60vw;
+      left: 35vw;
+      z-index: 7;
     }
 
     .no6 {
+      position: absolute;
+      bottom: 68vw;
+      left: 45vw;
+      z-index: 7;
     }
 
     .no7 {
-    }*/
+      position: absolute;
+      bottom: 65vw;
+      left: 56vw;
+      z-index: 7;
+    }
 
     .no8 {
       width: 6vw;
+      position: absolute;
+      bottom: 73vw;
+      left: 70vw;
+      z-index: 7;
     }
-/*
+
     .no9 {
+      position: absolute;
+      bottom: 64vw;
+      left: 72vw;
+      z-index: 7;
     }
 
     .no10 {
+      position: absolute;
+      bottom: 68vw;
+      left: 80vw;
+      z-index: 7;
     }
 
     .no11 {
-    }*/
+      position: absolute;
+      bottom: 58vw;
+      left: 84vw;
+      z-index: 7;
+    }
   }
 
-  &__kids {
-    // display: flex;
-    // justify-content: space-evenly;
-    // z-index: 3;
+  &__earth {
+    position: relative;
+    z-index: 1;
 
     &__kid1 {
-      width: 25vw;
+      width: 22vw;
+      position: absolute;
+      bottom: 33vw;
+      left: 10vw;
+      z-index: 7;
 
       .cls-1,
       .cls-2 {
@@ -408,6 +458,10 @@ pre {
 
     &__kid2 {
       width: 20vw;
+      position: absolute;
+      bottom: 39vw;
+      left: 40vw;
+      z-index: 7;
 
       .cls-1,
       .cls-2,
@@ -456,7 +510,11 @@ pre {
     }
 
     &__kid3 {
-      width: 25vw;
+      width: 22vw;
+      position: absolute;
+      bottom: 34vw;
+      left: 60vw;
+      z-index: 7;
 
       .cls-1,
       .cls-2,
@@ -517,24 +575,19 @@ pre {
         fill: #fff;
       }
     }
-  }
-
-  &__earth {
-    position: relative;
-    z-index: 1;
 
     &__text {
       //display: flex;
-     // z-index: 5;
-     font-size: 1.8vw;
-     line-height: 2.4vw;
-     font-weight: bold;
+      // z-index: 5;
+      font-size: 1.8vw;
+      line-height: 2.4vw;
+      font-weight: bold;
       #text1 {
         position: absolute;
         bottom: 13.5vw;
         left: 4.5vw;
         z-index: 6;
-      //  left: 50px;
+        //  left: 50px;
       }
 
       #text2 {
@@ -546,7 +599,7 @@ pre {
 
       #text3 {
         font-family: "marydale", sans-serif;
-        font-size: 5.5vw;        
+        font-size: 5.5vw;
         position: absolute;
         left: 34vw;
         bottom: 18vw;
@@ -569,7 +622,7 @@ pre {
 
       #text6 {
         position: absolute;
-        right: 3vw;        
+        right: 3vw;
         bottom: 0.01vw;
         z-index: 6;
       }
@@ -649,7 +702,7 @@ pre {
 
     &__divider {
       width: 0.3vw;
-      align-self:self-start;
+      align-self: self-start;
     }
 
     p {
