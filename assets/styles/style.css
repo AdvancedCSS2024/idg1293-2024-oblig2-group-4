@@ -195,11 +195,6 @@ pre {
 }
 .section3__co2 {
   z-index: 3;
-  /*    .no1 {
-      }
-
-      .no2 {
-      }*/
   /*
       .no4 {
       }
@@ -271,6 +266,10 @@ pre {
 .section3__co2__eyebrows .cls-4 {
   fill: #fff;
   stroke-width: 4.6px;
+}
+.section3__co2 .no1 {
+  width: 6w;
+  animation: co2-number1 1s infinite linear;
 }
 .section3__co2 .no3 {
   width: 6vw;
@@ -505,6 +504,26 @@ pre {
   fill: #0a0203;
 }
 
+@keyframes co2-number1 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2vw);
+  }
+  40% {
+    transform: translateY(1vw);
+  }
+  55% {
+    transform: translateY(2vw);
+  }
+  75% {
+    transform: translateY(1vw);
+  }
+  100% {
+    transform: translateY(0vw);
+  }
+}
 .footer {
   color: white;
   background-color: #005ba7;
@@ -519,14 +538,14 @@ pre {
   color: black;
 }
 .footer__bottom {
-  padding: 1%;
+  padding: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer__bottom__logo {
   width: 35vw;
-  padding: 0 15px 0 0;
+  padding: 0 1.5vw 0 0;
 }
 .footer__bottom__divider {
   width: 0.3vw;
