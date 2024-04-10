@@ -274,16 +274,16 @@ pre {
       }
     }
 
-    .no1 {
+/*    .no1 {
     }
 
     .no2 {
-    }
+    }*/
 
     .no3 {
       width: 6vw;
     }
-
+/*
     .no4 {
     }
 
@@ -294,12 +294,12 @@ pre {
     }
 
     .no7 {
-    }
+    }*/
 
     .no8 {
       width: 6vw;
     }
-
+/*
     .no9 {
     }
 
@@ -307,7 +307,7 @@ pre {
     }
 
     .no11 {
-    }
+    }*/
   }
 
   &__kids {
@@ -498,18 +498,61 @@ pre {
     z-index: 1;
 
     &__text {
-      z-index: 3;
-
+      //display: flex;
+     // z-index: 5;
+     font-size: 1.8vw;
+     line-height: 2.4vw;
+     font-weight: bold;
       #text1 {
         position: absolute;
-        top: 400%;
-        left: 50px;
+        bottom: 13.5vw;
+        left: 4.5vw;
+        z-index: 6;
+      //  left: 50px;
+      }
+
+      #text2 {
+        position: absolute;
+        bottom: 27vw;
+        left: 37vw;
+        z-index: 6;
+      }
+
+      #text3 {
+        font-family: "marydale", sans-serif;
+        font-size: 5.5vw;        
+        position: absolute;
+        left: 34vw;
+        bottom: 18vw;
+        z-index: 6;
+      }
+
+      #text4 {
+        position: absolute;
+        left: 38.5vw;
+        bottom: 1.9vw;
+        z-index: 6;
+      }
+
+      #text5 {
+        position: absolute;
+        right: 5.5vw;
+        bottom: 12.2vw;
+        z-index: 6;
+      }
+
+      #text6 {
+        position: absolute;
+        right: 3vw;        
+        bottom: 0.01vw;
+        z-index: 6;
       }
     }
 
     &__svg {
       position: relative;
-      margin: 0;
+      z-index: 4;
+      margin-bottom: 0%;
       .cls-1 {
         fill: #00b1dc;
       }
@@ -555,6 +598,9 @@ pre {
 .footer {
   color: white;
   background-color: #005ba7;
+  position: relative;
+  //bottom: 0vw;
+  z-index: 10;
 
   &__top {
     background-color: white;
