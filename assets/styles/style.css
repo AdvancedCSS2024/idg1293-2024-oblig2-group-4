@@ -506,18 +506,34 @@ pre {
 }
 
 .footer {
-  height: 20%;
   color: white;
   background-color: #005ba7;
-  position: relative;
-  z-index: 10;
 }
 .footer__top {
   background-color: white;
+}
+.footer__top p {
+  width: 98vw;
+  font-weight: bold;
+  text-align: center;
   color: black;
-  height: 40%;
-  padding: 1%;
 }
 .footer__bottom {
-  padding: 2%;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__bottom__logo {
+  width: 35vw;
+  padding: 0 15px 0 0;
+}
+.footer__bottom__divider {
+  width: 0.3vw;
+  align-self: self-start;
+}
+.footer__bottom p {
+  color: white;
+  text-align: right;
+  padding: 0 15px;
 }/*# sourceMappingURL=style.css.map */

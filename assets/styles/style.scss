@@ -1,5 +1,4 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
-
 @font-face {
   font-family: "OpenSans-Regular";
   src: url(assets/fonts/OpenSans.Regular.ttf) format("truetype");
@@ -623,21 +622,40 @@ pre {
 }
 
 .footer {
-  height: 20%;
   color: white;
   background-color: #005ba7;
-  position: relative;
-  //bottom: 0vw;
-  z-index: 10;
 
   &__top {
     background-color: white;
-    color: black;
-    height: 40%;
-    padding: 1%;
+
+    p {
+      width: 98vw;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+    }
   }
 
   &__bottom {
-    padding: 2%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+      width: 35vw;
+      padding: 0 15px 0 0;
+    }
+
+    &__divider {
+      width: 0.3vw;
+      align-self:self-start;
+    }
+
+    p {
+      color: white;
+      text-align: right;
+      padding: 0 15px;
+    }
   }
 }
