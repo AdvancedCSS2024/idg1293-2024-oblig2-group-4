@@ -169,10 +169,7 @@ pre {
 .section2 {
   display: flex;
   padding-bottom: 15vw;
-  /*&__text {
-    &--strong {
-      font-size: 60px;
-    }*/
+
   &__svg {
     position: relative;
   }
@@ -190,9 +187,7 @@ pre {
     width: 45vw;
     position: absolute;
     left: 42vw;
-    // top: 15px;
-    bottom: 40vw;
-    bottom: 20vw;
+    bottom: 42vw;
     #carpath {
       fill: none;
       stroke: none;
