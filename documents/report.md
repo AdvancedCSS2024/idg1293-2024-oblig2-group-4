@@ -16,12 +16,20 @@
 
    ### Stars
    
-   We used keyframe animation to animate the stars so that they sort of twinkle next to the moon. Keyframes and animation line taken from (insert lines here): https://flaviocopes.com/rotate-image/
+   We used keyframe animation to animate the stars so that they sort of twinkle next to the moon. Keyframes and animation line taken from (line 126 and line 140, keyframes line 150-167 in SCSS): https://flaviocopes.com/rotate-image/
    
    ### Wavy text and car
 
-   We implemented the wavy text design by creating a wavy path in illustrator and pasted it into the HTML (insert line here) and used a text tag within the SVG to add text to the curve. We then removed the curve by styling to stroke: none and fill: none. The car was animated using SMIL animations. The reason why we used this type of animation here was to create a more complex path for the animation.
+   We implemented the wavy text design by creating a wavy path in illustrator and pasted it into the HTML (svg line 88-93 in HTML)  and used a text tag within the SVG to add text to the curve. We then removed the curve by styling to stroke: none and fill: none. The car was animated using SMIL animations (animation from line 106 - 108 and path on line 98 in HTML). The reason why we used this type of animation here was to create a more complex path for the animation.
 
    ### Co2 
 
-   The co2 clouds (insert line here) surrounding the kids standing on the earth SVG were animated using keyframe animations to create some small but vivid movement. 
+   The co2 clouds (key frames from line 681 - 707 in SCSS) surrounding the kids standing on the earth SVG were animated using keyframe animations to create some small but vivid movement. 
+
+   ## Resources
+
+   https://developer.mozilla.org/en-US/
+
+   https://www.w3schools.com/
+
+   https://stackoverflow.com/
