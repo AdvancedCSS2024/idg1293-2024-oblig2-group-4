@@ -16,9 +16,16 @@
 }
 
 main {
-  background-image: url(../images/web_poster2-02.png);
+  background: url(../images/web_poster2-02.png) no-repeat;
+  width: 100vw;
+  //height: 100vw;
+  //object-fit: contain;
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+ // background-color: #00b1dc;
+//  background-repeat: no-repeat;
 }
 
 p,
@@ -61,7 +68,7 @@ pre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding-top: 0.5em;
   &__text {
     &--moon {
       color: white;
@@ -78,15 +85,9 @@ pre {
   }
 
   &__moon {
-    width: 18em;
-    padding-right: 20%;
-    padding-top: 40%;
-    padding-bottom: 40%;
-    //    position: absolute;
-    //    top: 85%;
-    //    right: 20px;
-
-    //svg styles
+    width: 30vw;
+    padding-right: 10vw;
+    padding-bottom: 20vw;
     .cls-1 {
       fill: #eaeae9;
       stroke-width: 4.21px;
@@ -128,10 +129,11 @@ pre {
 
   //big star
   &__bigstar {
-    width: 60px;
+    width: 8vw;
     position: absolute;
-    right: 25%;
-    top: 10%;
+    right: 10vw;
+    bottom: 40vw;
+    animation: big-star 10s infinite linear; //line taken from https://flaviocopes.com/rotate-image/
     .colour {
       fill: #f5ec43;
       stroke: #231f20;
@@ -141,16 +143,35 @@ pre {
   }
 
   &__smallstar {
-    width: 50px;
+    width: 6vw;
     position: absolute;
-    right: 10px;
-    top: 30%;
+    right: 3vw;
+    top: 1vw;
+    animation: small-star 5s infinite linear; //line taken from https://flaviocopes.com/rotate-image/
     .colour-small {
       fill: #f5ec43;
       stroke: #231f20;
       stroke-miterlimit: 10;
       stroke-width: 4.6px;
     } //I would put the colouring under one class, but it wouldn't work
+  }
+}
+
+@keyframes small-star { //code taken from https://flaviocopes.com/rotate-image/
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes big-star {
+  0% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
@@ -164,20 +185,26 @@ pre {
   &__svg {
     position: relative;
   }
-  &__curvedtext {
-    width: 550px;
-    //    position: absolute;
+  &__curvedtext {    
+    width: 50vw;
+//    position: absolute;
     font-family: "marydale", sans-serif;
     #curve {
       fill: none;
       stroke: none;
     }
   }
-  &__car {
-    width: 150px;
+  &__car {    
+    width: 45vw;
     position: absolute;
-    left: 80%;
-    top: 15px;
+    left: 42vw;
+   // top: 15px;
+   bottom: 20vw; 
+    #carpath {
+      fill: none;
+      stroke: none;
+  //    width: 50vw;
+    }
     .outline {
       stroke: #231f20;
       stroke-miterlimit: 10;
