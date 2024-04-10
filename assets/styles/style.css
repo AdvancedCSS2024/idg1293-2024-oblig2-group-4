@@ -13,7 +13,7 @@
 }
 
 main {
-  background: url(../images/web_poster2-02.png) no-repeat;
+  background: url(../images/web_poster2-03-02.png) no-repeat;
   width: 100vw;
   background-size: cover;
 }
@@ -53,14 +53,13 @@ pre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.5em;
+  padding-bottom: 18vw;
 }
 .section1__text--moon {
   color: white;
   margin-left: 5%;
   max-width: 40%;
   font-size: 2.5vw;
-  padding-bottom: 5em;
   line-height: 1em;
 }
 .section1__svgs {
@@ -69,7 +68,6 @@ pre {
 .section1__moon {
   width: 30vw;
   padding-right: 10vw;
-  padding-bottom: 20vw;
 }
 .section1__moon .cls-1 {
   fill: #eaeae9;
@@ -105,7 +103,7 @@ pre {
   width: 8vw;
   position: absolute;
   right: 10vw;
-  bottom: 40vw;
+  bottom: 20vw;
   animation: big-star 10s infinite linear;
 }
 .section1__bigstar .colour {
@@ -146,9 +144,11 @@ pre {
 }
 .section2 {
   display: flex;
-}
-.section2__text--strong {
-  font-size: 60px;
+  padding-bottom: 15vw;
+  /*&__text {
+    &--strong {
+      font-size: 60px;
+    }*/
 }
 .section2__svg {
   position: relative;
@@ -156,6 +156,7 @@ pre {
 .section2__curvedtext {
   width: 50vw;
   font-family: "marydale", sans-serif;
+  padding-bottom: 20vw;
 }
 .section2__curvedtext #curve {
   fill: none;
@@ -165,7 +166,7 @@ pre {
   width: 45vw;
   position: absolute;
   left: 42vw;
-  bottom: 20vw;
+  bottom: 40vw;
 }
 .section2__car #carpath {
   fill: none;
@@ -253,12 +254,15 @@ pre {
   bottom: 55vw;
   left: 10vw;
   z-index: 7;
+  width: 6w;
+  animation: co2-number1 1s infinite linear;
 }
 .section3__co2 .no2 {
   position: absolute;
   bottom: 58vw;
   left: 25vw;
   z-index: 7;
+  animation: co2-number1 4s infinite linear;
 }
 .section3__co2 .no3 {
   width: 6vw;
@@ -266,30 +270,35 @@ pre {
   bottom: 65vw;
   left: 28vw;
   z-index: 7;
+  animation: co2-number1 2s infinite linear;
 }
 .section3__co2 .no4 {
   position: absolute;
   bottom: 55vw;
   left: 32vw;
   z-index: 7;
+  animation: co2-number1 3s infinite linear;
 }
 .section3__co2 .no5 {
   position: absolute;
   bottom: 60vw;
   left: 35vw;
   z-index: 7;
+  animation: co2-number1 1s infinite linear;
 }
 .section3__co2 .no6 {
   position: absolute;
   bottom: 68vw;
   left: 45vw;
   z-index: 7;
+  animation: co2-number1 3s infinite linear;
 }
 .section3__co2 .no7 {
   position: absolute;
   bottom: 65vw;
   left: 56vw;
   z-index: 7;
+  animation: co2-number1 1s infinite linear;
 }
 .section3__co2 .no8 {
   width: 6vw;
@@ -297,24 +306,28 @@ pre {
   bottom: 73vw;
   left: 70vw;
   z-index: 7;
+  animation: co2-number1 2s infinite linear;
 }
 .section3__co2 .no9 {
   position: absolute;
   bottom: 64vw;
   left: 72vw;
   z-index: 7;
+  animation: co2-number1 1s infinite linear;
 }
 .section3__co2 .no10 {
   position: absolute;
   bottom: 68vw;
   left: 80vw;
   z-index: 7;
+  animation: co2-number1 1s infinite linear;
 }
 .section3__co2 .no11 {
   position: absolute;
   bottom: 58vw;
   left: 84vw;
   z-index: 7;
+  animation: co2-number1 2s infinite linear;
 }
 .section3__earth {
   position: relative;
@@ -555,35 +568,61 @@ pre {
   fill: #0a0203;
 }
 
+@keyframes co2-number1 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2vw);
+  }
+  40% {
+    transform: translateY(1vw);
+  }
+  55% {
+    transform: translateY(2vw);
+  }
+  75% {
+    transform: translateY(1vw);
+  }
+  100% {
+    transform: translateY(0vw);
+  }
+}
 .footer {
   color: white;
-  background-color: #005ba7;
+  background-color: white;
+  padding-top: 1vw;
 }
 .footer__top {
   background-color: white;
 }
-.footer__top p {
+.footer p {
   width: 98vw;
   font-weight: bold;
   text-align: center;
   color: black;
+  font-size: 1.2vw;
 }
 .footer__bottom {
-  padding: 1%;
+  background-color: #005ba7;
+  padding: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer__bottom__logo {
   width: 35vw;
-  padding: 0 15px 0 0;
+  padding: 0 1.5vw 0 0;
 }
 .footer__bottom__divider {
   width: 0.3vw;
+  align-self: self-start;
   align-self: self-start;
 }
 .footer__bottom p {
   color: white;
   text-align: right;
   padding: 0 15px;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
 }/*# sourceMappingURL=style.css.map */
