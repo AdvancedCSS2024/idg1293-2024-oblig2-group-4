@@ -15,16 +15,9 @@
 }
 
 main {
-  background: url(../images/web_poster2-02.png) no-repeat;
+  background: url(../images/web_poster2-03-02.png) no-repeat;
   width: 100vw;
-  //height: 100vw;
-  //object-fit: contain;
-  //-webkit-background-size: cover;
-  //-moz-background-size: cover;
-  //-o-background-size: cover;
   background-size: cover;
-  // background-color: #00b1dc;
-  //  background-repeat: no-repeat;
 }
 
 p,
@@ -58,7 +51,6 @@ pre {
       font-style: normal;
       font-size: 3vw;
       line-height: 1.2em;
-      //    max-width: 100%;
     }
   }
 }
@@ -67,14 +59,13 @@ pre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.5em;
+  padding-bottom: 18vw;
   &__text {
     &--moon {
       color: white;
       margin-left: 5%;
       max-width: 40%;
       font-size: 2.5vw;
-      padding-bottom: 5em;
       line-height: 1em;
     }
   }
@@ -86,7 +77,7 @@ pre {
   &__moon {
     width: 30vw;
     padding-right: 10vw;
-    padding-bottom: 20vw;
+   // padding-bottom: 20vw;
     .cls-1 {
       fill: #eaeae9;
       stroke-width: 4.21px;
@@ -131,7 +122,7 @@ pre {
     width: 8vw;
     position: absolute;
     right: 10vw;
-    bottom: 40vw;
+    bottom: 20vw;
     animation: big-star 10s infinite linear; //line taken from https://flaviocopes.com/rotate-image/
     .colour {
       fill: #f5ec43;
@@ -177,11 +168,11 @@ pre {
 
 .section2 {
   display: flex;
-  &__text {
+  padding-bottom: 15vw;
+  /*&__text {
     &--strong {
       font-size: 60px;
-    }
-  }
+    }*/
   &__svg {
     position: relative;
   }
@@ -189,6 +180,7 @@ pre {
     width: 50vw;
     //    position: absolute;
     font-family: "marydale", sans-serif;
+    padding-bottom: 20vw; 
     #curve {
       fill: none;
       stroke: none;
@@ -199,7 +191,7 @@ pre {
     position: absolute;
     left: 42vw;
     // top: 15px;
-    bottom: 20vw;
+    bottom: 40vw;
     #carpath {
       fill: none;
       stroke: none;
@@ -308,7 +300,6 @@ pre {
       bottom: 55vw;
       left: 10vw;
       z-index: 7;
-    .no1 {
       width: 6w;
       animation: co2-number1 1s infinite linear;
     }
@@ -318,9 +309,8 @@ pre {
       bottom: 58vw;
       left: 25vw;
       z-index: 7;
+      animation: co2-number1 4s infinite linear;
     }
-   // .no2 {
-    //}*/
 
     .no3 {
       width: 6vw;
@@ -328,6 +318,7 @@ pre {
       bottom: 65vw;
       left: 28vw;
       z-index: 7;
+      animation: co2-number1 2s infinite linear;
     }
 
     .no4 {
@@ -335,6 +326,7 @@ pre {
       bottom: 55vw;
       left: 32vw;
       z-index: 7;
+      animation: co2-number1 3s infinite linear;
     }
 
     .no5 {
@@ -342,6 +334,7 @@ pre {
       bottom: 60vw;
       left: 35vw;
       z-index: 7;
+      animation: co2-number1 1s infinite linear;
     }
 
     .no6 {
@@ -349,6 +342,7 @@ pre {
       bottom: 68vw;
       left: 45vw;
       z-index: 7;
+      animation: co2-number1 3s infinite linear;
     }
 
     .no7 {
@@ -356,6 +350,7 @@ pre {
       bottom: 65vw;
       left: 56vw;
       z-index: 7;
+      animation: co2-number1 1s infinite linear;
     }
 
     .no8 {
@@ -364,6 +359,7 @@ pre {
       bottom: 73vw;
       left: 70vw;
       z-index: 7;
+      animation: co2-number1 2s infinite linear;
     }
 
     .no9 {
@@ -371,6 +367,7 @@ pre {
       bottom: 64vw;
       left: 72vw;
       z-index: 7;
+      animation: co2-number1 1s infinite linear;
     }
 
     .no10 {
@@ -378,6 +375,7 @@ pre {
       bottom: 68vw;
       left: 80vw;
       z-index: 7;
+      animation: co2-number1 1s infinite linear;
     }
 
     .no11 {
@@ -385,6 +383,7 @@ pre {
       bottom: 58vw;
       left: 84vw;
       z-index: 7;
+      animation: co2-number1 2s infinite linear;
     }
   }
 
@@ -678,7 +677,6 @@ pre {
     }
   }
  }
-}
 
 @keyframes co2-number1 {
   0% {
@@ -710,20 +708,22 @@ pre {
 
 .footer {
   color: white;
-  background-color: #005ba7;
-
+  background-color: white;
+  padding-top: 1vw;
   &__top {
     background-color: white;
+    }
 
     p {
       width: 98vw;
       font-weight: bold;
       text-align: center;
       color: black;
+      font-size: 1.2vw;
     }
-  }
 
   &__bottom {
+    background-color: #005ba7;
     padding: 1vw;
     display: flex;
     align-items: center;
@@ -744,6 +744,8 @@ pre {
       color: white;
       text-align: right;
       padding: 0 15px;
+      font-size: 1.5vw;
+      line-height: 1.5vw;
     }
   }
 }
